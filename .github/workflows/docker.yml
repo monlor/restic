@@ -52,7 +52,7 @@ jobs:
         with:
           push: true
           context: .
-          file: docker/Dockerfile.release
+          file: docker/Dockerfile
           platforms: linux/386,linux/amd64,linux/arm,linux/arm64
           pull: true
           tags: ${{ steps.meta.outputs.tags }}
